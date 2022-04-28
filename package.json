@@ -4,7 +4,7 @@
   "description": "Implementación del caso Saturno Int.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "tsnd --respawn ./src/index.ts",
     "build": "tsc"
   },
@@ -21,6 +21,9 @@
   "homepage": "https://github.com/jblancoetec/saturno-hex-ts#readme",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
   }

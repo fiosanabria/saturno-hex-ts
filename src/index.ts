@@ -1,1 +1,1 @@
-console.log("hola gente");
+console.log("Good looking in your hacking space!");
