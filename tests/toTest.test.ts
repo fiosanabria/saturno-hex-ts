@@ -1,4 +1,4 @@
-import toTest from "../src/ToTest";
-test("toTest deberia ser igual a la frase -Todo deberia estar bien", () => {
-  expect(toTest).toBe("Todo deberia estar bien");
+import HelloWorld from "../src/index";
+test("HelloWorld deberia ser --Hello World", () => {
+  expect(HelloWorld).toBe("Hello World");
 });
