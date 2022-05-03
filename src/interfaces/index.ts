@@ -8,11 +8,13 @@ export abstract class ILectorDeTarjeta {
 
 export abstract class ISeguridadEstacionamiento {
   constructor(
-    protected readonly lector: ILectorDeTarjeta,
     protected readonly registro: IRegistroDeAcceso,
     protected readonly barrera: IBarrera
   ) {}
-  abstract verificarCodigoTarjeta(codigoTarjeta: string): void;
+  abstract verificarCodigoTarjeta(
+    codigoTarjeta: string,
+    lectorConTarjeta: ILectorDeTarjeta
+  ): void;
 }
 
 export interface IRegistroDeAcceso {

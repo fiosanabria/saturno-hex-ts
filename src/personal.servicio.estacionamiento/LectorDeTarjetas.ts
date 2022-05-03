@@ -2,7 +2,7 @@ import { ILectorDeTarjeta } from "../interfaces";
 
 class LectorDeTarjetas extends ILectorDeTarjeta {
   recibirTarjeta(): void {
-    this.seguridad.verificarCodigoTarjeta("12345");
+    this.seguridad.verificarCodigoTarjeta("12345", this);
   }
   devolverTarjeta(): void {
     throw new Error("Method not implemented.");
