@@ -1,11 +1,16 @@
-import Lector from "../../src/Lector";
-import EstacionamientoFalse from "../../mocks/acceso.estacionamiento/EstacionamientoFalso";
+import { Lector, Barrera, Acceso } from "../../src/acceso.estacionamiento";
+import Estacionamiento from "../../src/acceso.estacionamiento/Estacionamiento";
+jest.mock("../../src/acceso.estacionamiento/Estacionamiento"); //now Estacionamiento is a mock constructor
+
 import {
   IEstacionamiento,
   ILectorDeTarjeta,
-} from "../../src/acceso.estacionamiento/interfaces";
+} from "../../src/acceso.estacionamiento";
 
-const estacionamiento: IEstacionamiento = new EstacionamientoFalse();
+const estacionamiento: IEstacionamiento = new Estacionamiento(
+  new Acceso(),
+  new Barrera()
+);
 const lector: ILectorDeTarjeta = new Lector(estacionamiento);
 
 beforeEach(() => {

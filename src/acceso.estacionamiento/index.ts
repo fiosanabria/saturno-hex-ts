@@ -24,3 +24,8 @@ export interface IAcceso {
 export interface IBarrera {
   elevar(): void;
 }
+
+export { default as Lector } from "./Lector";
+export { default as Estacionamiento } from "./Estacionamiento";
+export { default as Acceso } from "./Acceso";
+export { default as Barrera } from "./Barrera";

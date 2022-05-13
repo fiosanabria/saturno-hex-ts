@@ -1,4 +1,4 @@
-import { ILectorDeTarjeta } from "./acceso.estacionamiento/interfaces";
+import { ILectorDeTarjeta } from ".";
 
 class Lector extends ILectorDeTarjeta {
   recibirTarjeta(): void {
