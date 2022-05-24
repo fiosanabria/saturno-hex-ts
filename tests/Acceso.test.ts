@@ -7,6 +7,6 @@ test("Deberia existir una clase Acceso que implemente IAcceso", () => {
   expect(acceso).toBeDefined();
 });
 
-test("Deberia ejecutarse el metodo guardarUltimoAcceso sin problemas", () => {
-  acceso.grabarUltimoAcceso("123456789");
+test("Deberia ejecutarse el metodo grabarUltimoAcceso sin problemas", () => {
+  expect(() => acceso.grabarUltimoAcceso("123455")).not.toThrow();
 });
