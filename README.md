@@ -1,6 +1,16 @@
-# Base para proyectos en TypeScript :writing_hand:
+# Caso Saturno
 
-Este template esta dirigido a todos aquellos que inician en `TyepScript` un proyecto nuevo. Para usarlo, simplemente tienes hacer un `fork` o usar el botón `use this template`.
+**Saturno Int.** la administración quiere mejorar sus medidas de seguridad para su edificio. Les gustaría impedir que personas ajenas a la empresa utilicen su aparcamiento.
+
+Saturno Int. ha decidido expedir documentos de identidad a todos los empleados. Cada tarjeta registra el nombre, departamento y número de personal de una empresa, y les da acceso al aparcamiento de la empresa. Se les pide a los empleados que usen las tarjetas mientras están en el sitio.
+
+Hay una barrera y un lector de tarjetas colocados en la entrada del aparcamiento. Cuando un conductor conduce su automóvil al estacionamiento, inserta su tarjeta de identidad en el lector de tarjetas. Luego, el lector de tarjetas verifica el número de tarjeta para ver si el sistema lo conoce. Si se reconoce el número, el lector envía una señal para activar la elevación de la barrera. A continuación, el conductor puede conducir su coche hasta el aparcamiento.
+
+Hay otra barrera a la salida del parking, que se levanta automáticamente cuando un coche quiere salir del parking.
+
+Un cartel en la entrada muestra "Lleno" cuando no hay plazas en el aparcamiento. Solo se apaga cuando sale un coche.
+
+Existe otro tipo de tarjeta para invitados, que también permite el acceso al aparcamiento. La tarjeta registra un número y la fecha actual. Dichas tarjetas se pueden enviar por adelantado o recoger en recepción. Todas las tarjetas de invitados deben devolverse a la recepción cuando el visitante sale de Saturn Int.
 
 ## Instalación y ejecución
 
