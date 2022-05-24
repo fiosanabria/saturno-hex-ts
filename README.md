@@ -30,3 +30,4 @@ Existe otro tipo de tarjeta para invitados, que también permite el acceso al ap
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
+- [rpi-gpio](https://www.npmjs.com/package/rpi-gpio)
