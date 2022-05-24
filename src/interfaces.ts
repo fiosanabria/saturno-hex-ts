@@ -12,8 +12,8 @@ export abstract class IEstacionamiento {
     protected readonly barrera: IBarrera
   ) {}
   abstract verificarCodigoTarjeta(
-    codigo: string,
-    lector: ILectorDeTarjeta
+    codigoTarjeta: string,
+    lectorConTarjeta: ILectorDeTarjeta
   ): void;
 }
 
