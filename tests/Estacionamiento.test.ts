@@ -39,3 +39,18 @@ test("Si el codigo a verificar es 456, este debe ser aceptado y se debe enviar u
   estacionamiento.verificarCodigoTarjeta("456", lector);
   expect(lector.mostrarMensajeExito).toBeCalled();
 });
+
+test("Si el codigo a verificar es 789, este debe ser rechazado y se debe enviar un mensaje de error al lector", () => {
+  estacionamiento.verificarCodigoTarjeta("789", lector);
+  expect(lector.mostrarMensajeError).toBeCalled();
+});
+
+test("Si el codigo a verificar es 789, este debe ser rechazado y no se debe elevar la barrera", () => {
+  estacionamiento.verificarCodigoTarjeta("789", lector);
+  expect(barrera.elevar).not.toBeCalled();
+});
+
+test("Si el codigo a verificar es 789, este debe ser rechazado y no se debe grabar acceso", () => {
+  estacionamiento.verificarCodigoTarjeta("789", lector);
+  expect(acceso.grabarUltimoAcceso).not.toBeCalled();
+});
